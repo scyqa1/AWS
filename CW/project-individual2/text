@@ -1,0 +1,174 @@
+Detected text
+----------
+Detected text:Be the Auther of
+Confidence: 65.88%
+Id: 0
+Type:LINE
+
+Detected text:ALL THE LIGHT WE CANNOT SEE
+Confidence: 100.00%
+Id: 1
+Type:LINE
+
+Detected text:WINNER of the Pulitzer PRIZE
+Confidence: 94.12%
+Id: 2
+Type:LINE
+
+Detected text:CLOUD
+Confidence: 94.89%
+Id: 3
+Type:LINE
+
+Detected text:CUCKOO
+Confidence: 98.70%
+Id: 4
+Type:LINE
+
+Detected text:LAND
+Confidence: 95.85%
+Id: 5
+Type:LINE
+
+Detected text:2340K
+Confidence: 41.94%
+Id: 6
+Type:LINE
+
+Detected text:ANTHONY
+Confidence: 100.00%
+Id: 7
+Type:LINE
+
+Detected text:DOERR
+Confidence: 100.00%
+Id: 8
+Type:LINE
+
+Detected text:Be
+Confidence: 47.45%
+Id: 9
+Parent Id: 0
+Type:WORD
+
+Detected text:the
+Confidence: 92.08%
+Id: 10
+Parent Id: 0
+Type:WORD
+
+Detected text:Auther
+Confidence: 33.25%
+Id: 11
+Parent Id: 0
+Type:WORD
+
+Detected text:of
+Confidence: 90.74%
+Id: 12
+Parent Id: 0
+Type:WORD
+
+Detected text:ALL
+Confidence: 100.00%
+Id: 13
+Parent Id: 1
+Type:WORD
+
+Detected text:THE
+Confidence: 100.00%
+Id: 14
+Parent Id: 1
+Type:WORD
+
+Detected text:LIGHT
+Confidence: 100.00%
+Id: 15
+Parent Id: 1
+Type:WORD
+
+Detected text:WE
+Confidence: 100.00%
+Id: 16
+Parent Id: 1
+Type:WORD
+
+Detected text:CANNOT
+Confidence: 100.00%
+Id: 17
+Parent Id: 1
+Type:WORD
+
+Detected text:SEE
+Confidence: 100.00%
+Id: 18
+Parent Id: 1
+Type:WORD
+
+Detected text:WINNER
+Confidence: 100.00%
+Id: 19
+Parent Id: 2
+Type:WORD
+
+Detected text:of
+Confidence: 99.95%
+Id: 20
+Parent Id: 2
+Type:WORD
+
+Detected text:the
+Confidence: 99.84%
+Id: 21
+Parent Id: 2
+Type:WORD
+
+Detected text:Pulitzer
+Confidence: 70.83%
+Id: 22
+Parent Id: 2
+Type:WORD
+
+Detected text:PRIZE
+Confidence: 100.00%
+Id: 23
+Parent Id: 2
+Type:WORD
+
+Detected text:CLOUD
+Confidence: 94.89%
+Id: 24
+Parent Id: 3
+Type:WORD
+
+Detected text:CUCKOO
+Confidence: 98.70%
+Id: 25
+Parent Id: 4
+Type:WORD
+
+Detected text:LAND
+Confidence: 95.85%
+Id: 26
+Parent Id: 5
+Type:WORD
+
+Detected text:2340K
+Confidence: 41.94%
+Id: 27
+Parent Id: 6
+Type:WORD
+
+Detected text:ANTHONY
+Confidence: 100.00%
+Id: 28
+Parent Id: 7
+Type:WORD
+
+Detected text:DOERR
+Confidence: 100.00%
+Id: 29
+Parent Id: 8
+Type:WORD
+
+Text detected: 30

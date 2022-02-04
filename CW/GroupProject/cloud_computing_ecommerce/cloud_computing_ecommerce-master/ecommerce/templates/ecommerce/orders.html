@@ -1,0 +1,63 @@
+
+{% include "ecommerce/header.html" %} 
+
+<body>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <h3 class="account-header">Orders</h3>
+        
+        
+            <div class="order-history-table">
+
+            
+                <div class="order-history-description"></div>
+                <div id="order_table_wrapper" class="dataTables_wrapper" role="grid">
+                    <table cellpadding="0" cellspacing="0" border="0" class="display table table-striped table-bordered dataTable" id="order_table" aria-describedby="order_table_info">
+                        <thead>
+                            <tr role="row">
+                                <th class="date-column sorting_desc" tabindex="0" rowspan="1" colspan="1" aria-sort="descending" aria-label="Order Date/Time: activate to sort column ascending" style="width: 292px;">Order Date/Time</th>
+                                <th class="number-column sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Order Number: activate to sort column descending" style="width: 195px;">Order Number</th>
+                                <th class="total-column sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Order Total: activate to sort column descending" style="width: 161px;">Order Total</th>
+                                <th class="status-column sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Status: activate to sort column descending" style="width: 192px;">Status</th>
+                                <th class="detail-column sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Orders: activate to sort column descending" style="width: 146px;">Details</th>
+                            </tr>
+                        </thead>
+                        
+                        {% if order_list %}
+                        {% for orders, details in order_detail.items %}
+                            <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                <tr class="odd">
+                                    <td class="date-column sorting_1"> {{orders.times}} </td>
+                                    <td class="number-column"><a> {{orders.id}} </a></td>
+                                    <td class="total-column"> ${{orders.totals}} </td>
+                                    <td class="status-column"> {{orders.status}} </td>
+                                    <td class="detail-column">
+                                        Products (amount)
+                                        
+                                            {% for detail in details %}   
+                                                <br>{{detail.product.name}}: {{detail.count}} </br>      
+                                            {% endfor %}
+                                       
+                                    </td>
+                                </tr>
+                            </tbody>
+                            {% endfor %}
+                        {% endif %}
+                        
+                    </table>
+                    
+                    <div class="bottom">
+                        <div class="dataTables_info" id="order_table_info">Showing 1 to {{ordersNum}} of {{ordersNum}} entries</div>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+
+
+</body>
+{% include "ecommerce/footer.html" %}

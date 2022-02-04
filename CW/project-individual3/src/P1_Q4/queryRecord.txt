@@ -1,0 +1,21 @@
+create table orders (
+    customerNumber char(40)  not null distkey sortkey,
+    orderNumber char(40) not null,
+    comments varchar(200),
+    orderDate timestamp,
+    orderType varchar(20),
+    shipDate timestamp,
+    discount real,
+    quantity integer,
+    productNumber varchar(50));
+
+
+copy orders
+from 's3://project3-q4/data.json'
+credentials 'aws_access_key_id=AKIAQEEOWQHE3H2OHTNL;aws_secret_access_key=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'
+json 'auto';
+
+
+select * from orders;
+SELECT * FROM Orders ORDER BY quantity DESC LIMIT 3;
+SELECT * FROM Orders WHERE quantity = 29;

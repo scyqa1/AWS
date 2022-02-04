@@ -1,0 +1,26 @@
+import MySQLdb
+
+USERNAME = 'root'
+PASSWORD = 'password'
+DB_NAME = 'mytestdb'
+
+print ("Connecting to RDS instance")
+
+conn = MySQLdb.connect(host = "", user = USERNAME, passwd = PASSWORD, db = DB_NAME, port = 3306)
+
+print ("Connected to RDS instance")
+
+cursor = conn.cursor()
+cursor.execute("SELECT VERSION()")
+row = cursor.fetchone()
+print ("server version: ", row[0])
+
+cursor.execute("")
+
+rows = cursor.fetchall()
+
+for row in rows:
+  print row
+
+cursor.close()
+conn.close()

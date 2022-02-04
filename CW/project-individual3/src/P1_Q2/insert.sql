@@ -1,0 +1,42 @@
+INSERT INTO Customer VALUES ("0", "Alice", TRUE, "6693112564");
+INSERT INTO Customer VALUES ("1", "Oliiva", TRUE, "6695483265");
+INSERT INTO Customer VALUES ("2", "Ava", TRUE, "6682548364");
+INSERT INTO Customer VALUES ("3", "Emily", TRUE, "6691254896");
+INSERT INTO Customer VALUES ("4", "Liam", FALSE, "6696648124");
+INSERT INTO Customer VALUES ("5", "Lucas", FALSE, "6694747223");
+INSERT INTO Customer VALUES ("6", "James", FALSE, "6694874359");
+INSERT INTO Customer VALUES ("7", "Jason", FALSE, "6693015987");
+INSERT INTO Customer VALUES ("8", "Bob", FALSE, "6693015964");
+
+INSERT INTO Orders VALUES ("0", "2", FALSE, 66);
+INSERT INTO Orders VALUES ("1", "3", FALSE, 108);
+INSERT INTO Orders VALUES ("2", "1", TRUE, 66);
+INSERT INTO Orders VALUES ("3", "1", TRUE, 70);
+INSERT INTO Orders VALUES ("4", "0", FALSE, 54);
+INSERT INTO Orders VALUES ("5", "5", FALSE, 2148);
+INSERT INTO Orders VALUES ("6", "7", TRUE, 410);
+INSERT INTO Orders VALUES ("7", "4", FALSE, 717);
+INSERT INTO Orders VALUES ("8", "6", TRUE, 164);
+
+INSERT INTO Product VALUES ("0", "shoes", 35, 32, TRUE, 3, "NO DESCRIPTION");
+INSERT INTO Product VALUES ("1", "water", 41, 25, TRUE, 8, "NO DESCRIPTION");
+INSERT INTO Product VALUES ("2", "wine", 66, 41, TRUE, 32, "NO DESCRIPTION");
+INSERT INTO Product VALUES ("3", "cookie", 3, 2, TRUE, 678, "NO DESCRIPTION");
+INSERT INTO Product VALUES ("4", "pen", 6, 3, TRUE, 452, "NO DESCRIPTION");
+INSERT INTO Product VALUES ("5", "apple", 108, 22, FALSE, 0, "NO DESCRIPTION");
+INSERT INTO Product VALUES ("6", "juice", 6, 1, TRUE, 365, "NO DESCRIPTION");
+INSERT INTO Product VALUES ("7", "macbook pro", 99, 50, TRUE, 8, "NO DESCRIPTION");
+INSERT INTO Product VALUES ("8", "wallet", 179, 110, TRUE, 90, "NO DESCRIPTION");
+
+INSERT INTO OrderHasProduct VALUES ("0", "2", 1);
+INSERT INTO OrderHasProduct VALUES ("4", "4", 3);
+INSERT INTO OrderHasProduct VALUES ("6", "1", 10);
+INSERT INTO OrderHasProduct VALUES ("7", "2", 9);
+INSERT INTO OrderHasProduct VALUES ("8", "1", 4);
+INSERT INTO OrderHasProduct VALUES ("4", "3", 2);
+INSERT INTO OrderHasProduct VALUES ("1", "5", 1);
+INSERT INTO OrderHasProduct VALUES ("2", "2", 1);
+INSERT INTO OrderHasProduct VALUES ("3", "0", 2);
+INSERT INTO OrderHasProduct VALUES ("7", "1", 3);
+INSERT INTO OrderHasProduct VALUES ("5", "8", 12);
+INSERT INTO OrderHasProduct VALUES ("4", "4", 5);
